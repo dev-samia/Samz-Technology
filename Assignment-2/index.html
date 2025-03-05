@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(219, 160, 87);
+            background-image: url('./images/vino-li-55nuS2rUYmQ-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #92805f;
+            border-color: #312613;
+            color: #504025;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav,a {
+            color: #312613;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style-type: none;
+            color: #504025;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            color: #504025;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+            color:#312613;
+            font-size: 20px;
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            
+        }
+        table, th, td {
+            border: 1px solid #504025;
+            padding: 8px;
+            margin: 0 auto;
+        }
+
+        th {
+            background-color: #92805f;;
+        }
+
+        #contact {
+            height: 100vh;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        #about {
+            color: #312613;
+        }
+
+        button.submit {
+            background-color: #92805f;
+            color: #221908;
+            padding: 10px 25px;
+            border: #312613;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <b><p >Welcome to my portfolio! I am a passionate developer with a love for creating innovative solutions.</p></b>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div>
+        <h3>Project 1: Portfolio Website</h3>
+        <b><p>This is a personal portfolio website to showcase my work and skills.</p></b>
+    </div>
+    <div>
+        <h3>Project 2: To-Do List App</h3>
+        <b><p>An app to manage daily tasks efficiently.</p></b>
+    </div>
+    <div>
+        <h3>Project 3: Blog Platform</h3>
+        <b><p>A blog where users can post and read articles.</p></b>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <b>
+            <tr>
+                <td>HTML</td>
+                <td>Expert</td>
+            </tr>
+        </b>
+
+        <b>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+        </b>
+        <b>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+            </tr>
+        </b>
+    </table>
+</section>
+
+<section id="video">
+    <h2>My Introduction Video</h2>
+    <video width="520" height="320" autoplay controls>
+        <source src="Untitled design.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="your name" size="40" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your email" size="40" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"  size="40" required></textarea><br><br>
+        
+        
+        <!-- <input type="submit" value="Submit" style="background-color: #5a4829; color: #312613; 
+        padding: 10px 25px; border:#312613; cursor: pointer;"> -->
+        
+    <button class="submit">Submit</button>
+    
+    </form> 
+</section>
+</body>
+</html>
